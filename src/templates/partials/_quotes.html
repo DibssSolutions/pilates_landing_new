@@ -1,8 +1,6 @@
 <div class="quotes-section section-md">
 	<div class="quotes-section__inner inner">
-		<div class="head">
-			<h2 class="head__title title">Чему вы научитись на курсе?</h2>
-		</div>
+		<h2 class="section-md__title title text-center">Чему вы научитись на курсе?</h2>
 		<ul class="quotes-section__row row">
 			{% for item in [
 				'Общим и основным правилам проведения занятий по пилатесу.',
@@ -12,7 +10,7 @@
 				'Эффективным методам по улучшению осанки.',
 				'Пилатес - путь к красивому, гибкому и подтянутому телу'
 			] %}
-				<li class="quotes-section__col col-2">
+				<li class="quotes-section__col col-2 col-md-3 col-sm-6">
 					{{ui.quote(item)}}
 				</li>
 			{% endfor %}

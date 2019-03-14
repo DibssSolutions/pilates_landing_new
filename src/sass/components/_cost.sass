@@ -2,20 +2,29 @@
 	letter-spacing: 0 
 	&__title
 		margin-bottom: 60px
+		+sm
+			margin-bottom: 37px 
 	&__wrap
 		display: flex
+		+sm
+			flex-wrap: wrap
 	&__left,
 	&__right
 		height: 100%
 		border-radius: 15px
 		width: 60%
+		+sm
+			width: 100%
+			margin: 0
 	&__left
 		padding: 50px 128px 27px 50px
 		margin-right: -5%
 		box-shadow: 0 20px 56px -33px rgba(0,0,0,0.20)
 		background: $white
 		+md
-			padding: 40px 128px 27px 40px
+			padding: 40px 100px 27px 40px
+		+sm
+			padding: 40px
 	&__right
 		padding: 50px 70px 60px
 		margin-top: 50px
@@ -24,13 +33,20 @@
 		background-color: $blue 
 		+md
 			padding: 40px 50px 40px
+		+sm
+			margin: 30px 0 0
+			padding: 40px
 	&__description
 		margin-bottom: 80px
 		font-weight: 700 
 		line-height: 1.86
+		+sm
+			margin-bottom: 30px
 	&__item
 		&:not(:last-child)
 			margin-bottom: 40px
+			+sm
+				margin-bottom: 30px
 	&__label
 		color: $grayLight 
 		line-height: 1.2
@@ -59,6 +75,8 @@
 		margin-top: 70px
 		font-size: 12px
 		color: $grayLight 
+		+sm
+			margin-top: 30px
 		span
 			color: #FF833E 
 .sm-form
