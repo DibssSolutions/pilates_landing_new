@@ -12,4 +12,16 @@ title: Index page
 	{% include "partials/_gallery.html" %}
 	{% include "partials/_graduate.html" %}
 	{% include "partials/_cost.html" %}
+	<div class="section-md">
+		{% for item in [{
+			title: 'Москва',
+			adress: 'Метро Китай-Город, ул. Солянка, 1/2, 2 подъезд, 2 этаж',
+			phoneHref: '+74952553056',
+			phone: '+7(495)255-30-56',
+			mailHref: 'contact@pilates-institute.ru',
+			mail: 'Сontact@pilates-institute.ru'
+		}] %}
+		 {{ui.map(item)}}
+		{% endfor %}
+	</div>
 {% endblock %}
