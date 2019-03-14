@@ -8,6 +8,7 @@
 	width: 100%
 	padding: 30px 0
 	transition: background-color .3s
+	color: $white
 	&.is-fixed 
 		background-color: $white
 		color: #363636
@@ -78,10 +79,13 @@
 	&__tel
 		display: block
 		line-height: 1
+		font-family: Verdana
+		font-size: 15px
+		letter-spacing: 0.94px
 	&__inst
 		display: block
 		position: relative
-		margin-left: 30px
+		margin-left: 65px
 		margin-top: -2px
 		line-height: 1
 		+lg
@@ -103,6 +107,7 @@
 		position: relative
 		overflow: hidden
 		display: block
+		letter-spacing: 0.05em
 		&.is-active
 			color: $orange
 			&:after
