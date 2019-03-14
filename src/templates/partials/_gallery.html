@@ -3,7 +3,7 @@
 		<div class="head">
 			<h2 class="head__title title">Фото с прошедших курсов</h2>
 		</div>
-		{% for item in [
+		{{gallery.block([
 			{
 				video: 'https://www.youtube.com/watch?v=_sI_Ps7JSEk',
 				img: 'gallery.png'
@@ -26,8 +26,6 @@
 			{
 				img: 'gallery.png'
 			}
-		] %}
-			{{gallery.block(item)}}
-		{% endfor %}
+			])}}
 	</div>
 </div>
