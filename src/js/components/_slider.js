@@ -14,57 +14,57 @@ import {
 
 // 									small slider
 
-// const testimonialSlider = $('.js-small-slider');
-// const options = {
-//   slidesToShow: 2,
-//   slidesToScroll: 1,
-//   infinite: true,
-//   dots: true,
-//   arrows: false,
-//   customPaging: (slider, pageIndex) => {
-//     return $('<button class="small__dot"></button>');
-//   },
-//   dotsClass: 'small-dots',
-//   responsive: [
-//     // {
-//     //   breakpoint: 1023,
-//     //   settings: {
-//     //     slidesToShow: 2,
-//     //     slidesToScroll: 1,
-//     //     infinite: true,
-//     //     dots: true
-//     //   }
-//     // },
-//     {
-//       breakpoint: 767,
-//       settings: {
-//         slidesToShow: 1,
-//         slidesToScroll: 1,
-//         infinite: true,
-//         dots: true
-//       }
-//     }
-//   ]
-// };
+const testimonialSlider = $('.js-small-slider');
+const options = {
+  slidesToShow: 2,
+  slidesToScroll: 1,
+  infinite: true,
+  dots: true,
+  arrows: false,
+  customPaging: (slider, pageIndex) => {
+    return $('<button class="small__dot"></button>');
+  },
+  dotsClass: 'small-dots',
+  responsive: [
+    // {
+    //   breakpoint: 1023,
+    //   settings: {
+    //     slidesToShow: 2,
+    //     slidesToScroll: 1,
+    //     infinite: true,
+    //     dots: true
+    //   }
+    // },
+    {
+      breakpoint: 767,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        infinite: true,
+        dots: true
+      }
+    }
+  ]
+};
 
-// const detectWindowWidth = () => {
-//   const initSlider = $('.js-small-slider.slick-slider');
-//   if (mediaWidth(1023)) {
-//     if (initSlider.length) return;
-//     testimonialSlider.slick(options);
-//   } else {
-//     if (!initSlider.length) return;
-//     testimonialSlider.slick('unslick');
-//   }
-// };
-// detectWindowWidth();
+const detectWindowWidth = () => {
+  const initSlider = $('.js-small-slider.slick-slider');
+  if (mediaWidth(1023)) {
+    if (initSlider.length) return;
+    testimonialSlider.slick(options);
+  } else {
+    if (!initSlider.length) return;
+    testimonialSlider.slick('unslick');
+  }
+};
+detectWindowWidth();
 
-// let timeout;
+let timeout;
 
-// WIN.resize(() => {
-//   clearTimeout(timeout);
-//   timeout = setTimeout(detectWindowWidth, 100);
-// });
+WIN.resize(() => {
+  clearTimeout(timeout);
+  timeout = setTimeout(detectWindowWidth, 100);
+});
 
 
 // SCHEDULE

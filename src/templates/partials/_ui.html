@@ -23,7 +23,7 @@
 		<div class="testimonial__top">
 			<div class="testimonial__img" style="background-image: url(./img/testimonial.png)"></div>
 			<div class="testimonial__main">
-				<h4 class="testimonial__title title title_md">{{props.name}}</h4>
+				<h4 class="testimonial__title title-sm">{{props.name}}</h4>
 				<div class="testimonial__aside">{{props.aside}}</div>
 			</div>
 		</div>
@@ -165,16 +165,16 @@
 <div class="contacts">
 	<div class="map" id="map"></div>
 	<div class="contacts__info contacts-info">
-		<h4 class="contacts-info__title title title_md">{{props.title}}</h4>
+		<h4 class="contacts-info__title title-sm">{{props.title}}</h4>
 		<div class="contacts-info__aside">Адрес</div>
-		<address>Метро Китай-Город, ул. Солянка, 1/2, 2 подъезд, 2 этаж</address>
+		<address>{{props.adress}}</address>
 		<div class="contacts-info__aside">Телефон</div>
 		<div class="contacts-info__phone">
-			<a href="tel:+74952553056">+7(495)255-30-56</a>
+			<a href="tel:{{props.phoneHref}}">{{props.phone}}</a>
 		</div>
 		<div class="contacts-info__aside">Почта</div>
 		<div class="contacts-info__phone">
-			<a href="mailto:contact@pilates-institute.ru">Сontact@pilates-institute.ru</a>
+			<a href="mailto:{{props.mailHref}}">{{props.mail}}</a>
 		</div>
 	</div>
 </div>
