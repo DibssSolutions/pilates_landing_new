@@ -1,0 +1,29 @@
+<div class="graduate section-sm">
+	<div class="graduate__inner inner">
+		<h2 class="section-sm__title title">Выпускники о курсе</h2>
+		<div class="graduate__row row js-small-slider">
+			{% for item in [
+				{
+				name: 'Harold Roberts',
+				aside: 'Студентка Пилатоса',
+				text: 'Lorem ipsum dolor sit amet, outdd consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit.'
+				},
+				{
+				name: 'Harold Roberts',
+				aside: 'Студентка Пилатоса',
+				text: 'Lorem ipsum dolor sit amet, outdd consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit.'
+				},
+				{
+				name: 'Harold Roberts',
+				aside: 'Студентка Пилатоса',
+				text: 'Lorem ipsum dolor sit amet, outdd consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit.'
+				}
+			]
+			 %}
+			 <div class="graduate__col col-2 col-md-6">
+				 {{ui.testimonial(item)}}
+			 </div>
+			{% endfor %}
+		</div>
+	</div>
+</div>
