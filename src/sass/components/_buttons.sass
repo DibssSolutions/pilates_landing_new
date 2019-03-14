@@ -40,3 +40,28 @@
 		min-width: 433px
 	&_wide
 		width: 100%
+	&_shadow
+		box-shadow: none
+
+
+
+
+.play
+	display: block
+	+circle(60)
+	background-color: $orange
+	position: relative
+	font-size: 30px
+	color: $white
+	transition: transform .2s
+	+md
+		.my-course__video &
+			+circle(40)
+			font-size: 20px
+	+sm
+		+circle(40)
+		font-size: 20px
+	.icon
+		position: absolute
+		+vcenter
+		margin-left: 2px

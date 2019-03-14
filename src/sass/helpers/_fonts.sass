@@ -13,6 +13,11 @@ $familyVerdana: 'Verdana'
 =verdana
 	font-family: 'Verdana', Arial, -apple-system, BlinkMacSystemFont, 'Oxygen', sans-serif
 
+$montserrat: 'Montserrat'
+
+=montserrat
+	font-family: 'Montserrat', Arial, -apple-system, BlinkMacSystemFont, 'Oxygen', sans-serif
+
 
 // Verdana
 
@@ -28,3 +33,18 @@ $familyVerdana: 'Verdana'
 @font-face
 	+fontdefault(italic, 700, $familyVerdana)
 	+fontpath('Verdana-BoldItalic', 'Verdana-BoldItalic', Verdana-BoldItalic)
+
+// Montserrat
+
+@font-face
+	+fontdefault(normal, 400, $montserrat)
+	+fontpath('Montserrat', 'Montserrat', Montserrat)
+@font-face
+	+fontdefault(italic, 400, $montserrat)
+	+fontpath('Montserrat-Italic', 'Montserrat-Italic', Montserrat-Italic)
+@font-face
+	+fontdefault(normal, 700, $montserrat)
+	+fontpath('Montserrat-Bold', 'Montserrat-Bold', Montserrat-Bold)
+@font-face
+	+fontdefault(italic, 700, $montserrat)
+	+fontpath('Montserrat-BoldItalic', 'Montserrat-BoldItalic', Montserrat-BoldItalic)
