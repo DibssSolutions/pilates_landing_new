@@ -1,0 +1,47 @@
+<div class="course-section section-md bg-white">
+	<div class="course-section__inner inner">
+		<div class="course-section__content">
+			<div class="course-section__left">
+				<h2 class="course-section__title title">Для кого подходит курс</h2>
+				<ol class="course-section__bullets">
+					{% for item in [
+						{
+							text: 'Инструкторам по пилатес, ЛФК и другим направлениям'
+						},
+						{
+							text: 'Фитнес - тренеру, желающему повысить свою квалификацию'
+						},
+						{
+							text: 'Людям, решившим освоить новую профессию'
+						},
+						{
+							text: 'Тем, кто следит за своим здоровьем и телом'
+						},
+						{
+							text: 'Танцовщикам'
+						},
+						{
+							text: 'Людям в возрасте с активной жизненной позицией'
+						}
+					] %}
+						<li class="course-section__bullets-item">
+							{{ui.bullet(item)}}
+						</li>
+					{% endfor %}
+				</ol>
+			</div>
+			<div class="course-section__right">
+				<div class="course-section__row row">
+					{% for item in [
+						'yoga.png',
+						'run.png'
+					] %}
+						<div class="course-section__col col-3">
+							<div class="course-section__img" style="background-image: url(./img/{{item}})"></div>
+						</div>
+					{% endfor %}
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

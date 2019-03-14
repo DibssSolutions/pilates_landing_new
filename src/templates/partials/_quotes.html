@@ -1,0 +1,24 @@
+<div class="quotes-section section-md">
+	<div class="quotes-section__inner inner">
+		<div class="head">
+			<h2 class="head__title title">Чему вы научитись на курсе?</h2>
+		</div>
+		<ul class="quotes-section__row row">
+			{% for item in [
+				'Общим и основным правилам проведения занятий по пилатесу.',
+				'Основным принципам внутреннего контроля во время занятий.',
+				'Правильному выполнению 15 базовых упражнений пилатес.',
+				'Разбираться в анатомическом строении тела человека.',
+				'Эффективным методам по улучшению осанки.',
+				'Пилатес - путь к красивому, гибкому и подтянутому телу'
+			] %}
+				<li class="quotes-section__col col-2">
+					{{ui.quote(item)}}
+				</li>
+			{% endfor %}
+		</ul>
+		<div class="quotes-section__btn">
+			<a href="#" class="btn btn_lg">Записаться на курс</a>
+		</div>
+	</div>
+</div>

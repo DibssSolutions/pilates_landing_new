@@ -1,3 +1,63 @@
-.block
-	display: flex
-	// remove this
+// course-section
+.course-section
+	padding-bottom: 130px
+	&__content
+		display: flex
+		flex-wrap: wrap
+		align-items: center
+		justify-content: space-between
+	&__left
+		padding-right: 30px
+		width: 50%
+	&__right
+		width: 50%
+	&__bullets
+		counter-reset: section
+		list-style-type: none
+		margin-top: 40px
+		&-item
+			&:not(:first-child)
+				margin-top: 40px
+	&__img
+		height: 567px
+		+cover
+		box-shadow: 0 35px 60px -24px rgba(37, 35, 35, 0.5)
+// course-section
+
+
+// quotes-section
+.quotes-section
+	&__row
+		margin: -15px
+	&__col
+		padding: 15px
+	&__btn
+		text-align: center
+		margin-top: 50px
+// quotes-section
+
+// about-section
+.about
+	&__tabs-wrap
+		background-color: $white
+		padding: 30px 80px 100px
+		box-shadow: 0 20px 56px -33px rgba(0, 0, 0, 0.2)
+		position: relative
+	&__btn
+		position: absolute
+		left: 50%
+		bottom: -30px
+		transform: translateX(-50%)
+// about-section
+
+// instructors
+.instructors
+// instructors
+
+// certificate
+.certificate
+	&__bullets
+		counter-reset: section
+		list-style-type: none
+
+// certificate

@@ -1,0 +1,67 @@
+<div class="about section">
+	<div class="about__inner inner-md">
+		<article class="article">
+			<h1 class="article__title title">О курсе “PILATES MATWORK 1”</h1>
+			<p>Инструктор, тренер, преподаватель, специалист, наставник – это человек, который помогает и отвечает за правильное выполнение физических упражнений с целью оздоровления и приведения своего тела в совершенный вид. Идеальный претендент на это звание, как правило, разбирается в анатомии, знает принципы выполнения результативных упражнений, имеет практические и теоретические знания в области ЛФК, умеет работать с людьми и, даже, разбирается в психологии. В современной фитнес индустрии такие профессионалы встречаются редко, но они крайне необходимы!</p>
+			<p>Именно поэтому наш институт создал курс, который поможет не только усовершенствовать знания уже зарекомендовавшим себя тренерам, но и получить сертификацию только еще начинающим карьеру инструктора по пилатес. Данный сертификат позволит получить статус эксперта международного уровня, а также, найти подход и разработать индивидуальную методику для своих клиентов!</p>
+		</article>
+		<div class="section-sm">
+			<div class="about__tabs-wrap">
+				<div class="about__tabs" data-tabs>
+					<div class="tabs">
+						<ul class="tabs__control">
+							<li class="tabs__control-item">
+								<button class="btn btn_blue" data-tabs-control='practice'>Практика 30%</button>
+							</li>
+							<li class="tabs__control-item">
+								<button class="btn btn_blue" data-tabs-control='theory'>Теория 70%</button>
+							</li>
+						</ul>
+						<div class="tabs__wrapper" data-tabs-wrapper>
+							{% for item in [
+								{
+									container: 'practice',
+									text: 'Практический анализ 15 базовых упражнений пилатес. The hundred (сотня); The roll up (скручивание); The one leg circle (круги одной ногой), Rolling Back (перекат); The one leg stretch (вытягивание одной ноги); Double leg stretch (вытягивание двух ног); The swan dive (нырок лебедя); Scissors (ножницы); Shoulder Bridge (плечевой мост); Spine twist (скручивание позвоночника); The side kick (кик на боку); Swimming (плавание); The leg pull (планка, вытягивание ног лицом вниз); The side bend (боковой выгиб); The push up (отжимание)',
+									list: [
+										'Принципы мышечного анализа комплекса',
+										'Методику классификации упражнений по степени сложности',
+										'Методы коррекции осанки и улучшения общего состояния',
+										'Поиск визуального ряда, принципы контроля правильности выполнения упражнений',
+										'Принципы построения тренировки, сочетание упражнений и их модификация',
+										'Понятие эффективной разминки, формата занятий и заминки',
+										'Правила проведения занятий'
+										]
+								},
+								{
+									container: 'theory',
+									text: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. At laudantium accusamus eos neque quidem reprehenderit a sapiente, culpa quas, nemo amet, architecto minima dignissimos reiciendis. Officiis, rerum eos sequi quis unde adipisci repellat, dolorem totam iure accusamus suscipit voluptas deleniti molestias, delectus voluptatum fugiat provident cupiditate laborum doloremque velit tempora.',
+									list: [
+										'Принципы мышечного анализа комплекса',
+										'Методику классификации упражнений по степени сложности',
+										'Методы коррекции осанки и улучшения общего состояния',
+										'Поиск визуального ряда, принципы контроля правильности выполнения упражнений',
+										'Принципы построения тренировки, сочетание упражнений и их модификация',
+										'Понятие эффективной разминки, формата занятий и заминки',
+										'Правила проведения занятий'
+										]
+								}
+							] %}
+							<div class="tabs__content" data-tabs-container="{{item.container}}">
+								<p>{{item.text}}</p>
+								<ul class="tabs__list">
+									{% for listItem in item.list %}
+										<li class="tabs__item">{{listItem}}</li>
+									{% endfor %}
+								</ul>
+							</div>
+							{% endfor %}
+						</div>
+					</div>
+				</div>
+				<div class="about__btn">
+					<a href="#" class="btn">Записаться на курс</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

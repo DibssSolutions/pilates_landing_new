@@ -22,15 +22,21 @@
 		background-color: $orangeHover
 		box-shadow: none
 	&_blue
-		background-color: $white
+		letter-spacing: 0.033em
+		font-weight: 700
+		background-color: $body
 		box-shadow: none
 		color: $grayLight
 		transition: background-color .3s, box-shadow .3s, color .3s
 		&.is-active
 			color: $white
-			background-color: $blue
-			box-shadow: 0 19px 25px -12px $blue
+			background-color: $blueCityHover
+			box-shadow: 0 19px 45px -12px $blue
 		+hover
 			color: $white
 			background-color: $blueCityHover
-			box-shadow: 0 19px 25px -12px $blue
+			box-shadow: 0 19px 45px -12px $blue
+	&_lg
+		min-width: 433px
+	&_wide
+		width: 100%

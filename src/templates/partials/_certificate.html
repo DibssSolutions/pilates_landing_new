@@ -1,0 +1,38 @@
+<div class="certificate section-md">
+	<div class="certificate__inner inner-sm">
+		<h2 class="certificate__title title">После прохождения курса вы получите Сертификат</h2>
+		<div class="section">
+			<div class="certificate__content">
+				<div class="certificate__img">
+					<img src="./img/certificate.png" alt="certificate">
+				</div>
+				<ol class="certificate__bullets">
+						{% for item in [
+							{
+								text: 'Инструкторам по пилатес, ЛФК и другим направлениям'
+							},
+							{
+								text: 'Фитнес - тренеру, желающему повысить свою квалификацию'
+							},
+							{
+								text: 'Людям, решившим освоить новую профессию'
+							},
+							{
+								text: 'Тем, кто следит за своим здоровьем и телом'
+							},
+							{
+								text: 'Танцовщикам'
+							},
+							{
+								text: 'Людям в возрасте с активной жизненной позицией'
+							}
+						] %}
+							<li class="certificate__bullets-item">
+								{{ui.bullet(item)}}
+							</li>
+						{% endfor %}
+					</ol>
+			</div>
+		</div>
+	</div>
+</div>

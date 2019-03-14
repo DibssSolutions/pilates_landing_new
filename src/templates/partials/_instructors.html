@@ -1,0 +1,27 @@
+<div class="instructors section">
+	<div class="instructors__inner inner-md">
+		<div class="head">
+			<h2 class="head__title title">Преподаватели</h2>
+		</div>
+		<div class="instructors__row row">
+			{% for item in [
+				{
+					img: 'instructor.png',
+					name: 'Ольга Кочешкова',
+					aside: 'Стаж инструктора 10 лет',
+					text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit.'
+				},
+				{
+					img: 'instructor.png',
+					name: 'Gussie Hammond',
+					aside: 'Стаж инструктора 10 лет',
+					text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit.'
+				}
+			] %}
+			<div class="instructors__col col-3">
+				{{ui.instructor(item)}}
+			</div>
+			{% endfor %}
+		</div>
+	</div>
+</div>
