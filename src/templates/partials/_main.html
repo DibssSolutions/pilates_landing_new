@@ -1,0 +1,66 @@
+<div class="main js-navigation-section">
+  <div
+    class="main__video js-video"
+    data-vide-bg="mp4: video/pilates"
+    data-vide-options="posterType: jpg, loop: true, playsinline: true"
+  ></div>
+  <div class="main__container">
+    <div class="main__content">
+      <h3 class="main__descr title-sm">
+        3 дневный курс — 8/9/10 февраля 2019 г. Москва (+1 день интенсив)
+      </h3>
+      <h1 class="main__title">
+        Курсы для тех, кто хочет стать инстурктором (тренером) по пилатесу
+        (Matwork1)
+      </h1>
+      <div class="main__form">
+        <form action="" class="form js-validation">
+          <div class="form__item">
+            <div class="form-group">
+              <input
+                class="form-group__rect-input"
+                type="text"
+                placeholder="Имя"
+                data-validation="required length"
+                data-validation-length="min2"
+                data-validation-error-msg="Пожалуйста, введите ваше имя"
+              />
+            </div>
+          </div>
+          <div class="form__item">
+            <div class="form-group">
+              <input
+                type="text"
+                class="form-group__rect-input"
+                placeholder="Телефон"
+                data-validation="custom"
+                data-validation-regexp="^(\+7|7|8)?[\s\-]?\(?[489][0-9]{2}\)?[\s\-]?[0-9]{3}[\s\-]?[0-9]{2}[\s\-]?[0-9]{2}$"
+                data-validation-error-msg="Пожалуйста, введите правильный номер телефона"
+              />
+            </div>
+          </div>
+          <div class="form__item">
+            <div class="form-group">
+              <input
+                type="text"
+                class="form-group__rect-input"
+                placeholder="Email"
+                data-validation="email"
+                data-validation-error-msg="Пожалуйста, введите правильный адрес"
+              />
+            </div>
+          </div>
+          <div class="form__item">
+            <button type="submit" class="btn btn_wide btn_rect btn_shadow">
+              Отправить
+            </button>
+          </div>
+        </form>
+      </div>
+      <h2 class="main__price">
+        Базовая стоимость курса 19 900 ₽ (за 3 дня) + 4000 ₽ за 4день — по
+        желанию (интенсив)
+      </h2>
+    </div>
+  </div>
+</div>

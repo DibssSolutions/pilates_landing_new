@@ -1,4 +1,5 @@
 import './_tabs';
+import './_video';
 import './_slider';
 import './_fancybox';
 // import './_header';
@@ -6,3 +7,4 @@ import './_fancybox';
 // import './_modal';
 // import './_dropdown';
 import './_validation';
+import './_header';

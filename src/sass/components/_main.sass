@@ -1,0 +1,114 @@
+.main
+	position: relative
+	height: 100vh
+	min-height: 630px
+	background-color: rgba($color: #2b2e26, $alpha: 0.5)
+	letter-spacing: 0
+	+sm
+		height: auto
+	.error
+		color: #fff
+	&__video
+		position: relative
+		height: 100%
+		width: 100%
+		+sm
+			position: absolute
+			top: 0
+			left: 0
+		&:before
+			position: absolute
+			left: 0
+			top: 0
+			bottom: 0
+			right: 0
+			content: ""
+			z-index: 1
+			background-color: rgba(#142338, 0.45) 
+	&__container
+		position: absolute
+		top: 0
+		left: 0
+		height: 100%
+		width: 100%
+		z-index: 4
+		color: #fff
+		padding: 100px 0 85px
+		+vertical
+		+md
+			padding: 49px 0 0
+		+sm
+			position: relative
+		&:before
+			+sm
+				display: none
+	&__content
+		display: inline-block
+		vertical-align: middle
+		color: $white
+		max-width: 1150px
+		width: 100%
+		padding: 0 15px
+		text-align: left
+		// max-width: 1105px
+		// width: 99.8%
+		// width: 99.8%
+		width: 100%
+		+sm
+			display: block
+			padding-top: 30px
+	&__title
+		+verdana
+		+f(40px, 700, 1.35)
+		margin-top: 10px
+		margin-bottom: 60px
+		letter-spacing: 0.012em	
+		+md
+			font-size: 32px
+		+sm
+			font-size: 24px
+	&__subtitle
+		margin-top: 30px
+		text-transform: uppercase
+		
+		+sm
+			font-size: 20px
+	&__descr
+		&.title-sm
+			color: $white
+			letter-spacing: 0.011em
+	&__price
+		color: $white
+		+verdana
+		font-weight: 300
+		+f(18px, 400, 1.667)
+	&__form
+		margin-bottom: 30px
+		width: 100%
+		+sm
+			margin-top: 30px
+	&__address
+		font-size: 21px
+		font-weight: 500
+		margin-top: 40px
+		+sm
+			font-size: 18px
+			margin-top: 20px
+
+.form
+	margin: 0 -1px
+	display: flex
+	border-radius: 10px
+	overflow: hidden
+	+md 
+		flex-direction: column
+		max-width: 640px
+		margin: 0 auto
+		border-radius: 0
+	&__item
+		+flex-size(25%)
+		padding: 0 1px
+		+md 
+			flex: 0 0 auto
+			max-width: 100%
+			margin: 2px 0

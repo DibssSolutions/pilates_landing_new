@@ -174,34 +174,34 @@
 	// 	left: 0
 
 // 										FORM
-.form
-	// width: 100%
-	display: flex
-	justify-content: center
-	align-items: center
-	flex-wrap: wrap
-	&__btn
-		+lg
-			margin-top: 30px
-			text-align: center
-		+sm
-			margin-top: 14px
-	&__row
-		width: 100%
-		margin: 0 -10px
-		+xs
-			margin: 0
-	&__col
-		padding: 0 10px
-		+sm
-			&:not(:first-child)
-				margin-top: 14px
-		+xs
-			padding: 0
-	.form-group
-		&.has-error
-			+sm
-				margin-bottom: 16px
+// .form
+// 	// width: 100%
+// 	display: flex
+// 	justify-content: center
+// 	align-items: center
+// 	flex-wrap: wrap
+// 	&__btn
+// 		+lg
+// 			margin-top: 30px
+// 			text-align: center
+// 		+sm
+// 			margin-top: 14px
+// 	&__row
+// 		width: 100%
+// 		margin: 0 -10px
+// 		+xs
+// 			margin: 0
+// 	&__col
+// 		padding: 0 10px
+// 		+sm
+// 			&:not(:first-child)
+// 				margin-top: 14px
+// 		+xs
+// 			padding: 0
+// 	.form-group
+// 		&.has-error
+// 			+sm
+// 				margin-bottom: 16px
 
 .form-group
 	position: relative
@@ -220,6 +220,8 @@
 			border: 1px solid $white
 			&.error
 				border: 1px solid $errorRed !important
+		&.form-group__rect-input
+			border-radius: 0
 		&.error
 			border: 1px solid $orange !important
 		&:focus
