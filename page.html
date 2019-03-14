@@ -1,3 +1,4 @@
+s
 <!doctype html>
 <html>
 
@@ -14,52 +15,32 @@
   <body>
     <!-- BEGIN content -->
     <div class="out">
-      <h1>Index page</h1>
-      <p>Hello from partials/_header.html</p>
-      <svg class="icon icon-facebook">
-        <use xlink:href="img/sprite.svg#icon-facebook"></use>
-      </svg>
-      <p>
-        <!-- begin input -->
-        <label class="checkbox">
-          <input type="checkbox" name="checkbox">
-          <span class="checkbox__text">checkbox</span>
-        </label>
-        <!-- end input -->
-      </p>
-      <p>
-        <!-- begin input -->
-        <label class="checkbox">
-          <input type="checkbox" name="exemple-name" checked>
-          <span class="checkbox__text">checkbox-checked</span>
-        </label>
-        <!-- end input -->
-      </p>
-      <!-- begin input -->
-      <label class="radio">
-        <input type="radio" name="exemple-name">
-        <span class="radio__text">text</span>
-      </label>
-      <!-- end input -->
-      <!-- begin breadcrumbs -->
-      <ul class="breadcrumbs">
-        <li class="breadcrumbs__item">
-          <a href="#">Главная</a>
-        </li>
-        <li class="breadcrumbs__item">
-          <a href="#">Внутренняя</a>
-        </li>
-        <li class="breadcrumbs__item">
-          <span>Корзина</span>
-        </li>
-      </ul>
-      <!-- end breadcrumbs -->
-      <li>Item1</li>
-      <li>Item2</li>
     </div>
     <!-- END content -->
     <!-- BEGIN scripts -->
     <script type="text/javascript" src="js/app.js"></script>
+    <!-- <script src="https://api-maps.yandex.ru/2.1/?apikey=7a9648bf-398b-4673-ad66-512ef28875ce&lang=ru_RU" type="text/javascript"></script> -->
+    <!-- <script>
+		const map = document.querySelectorAll('.map');
+		if (map) {
+      if(ymaps) {
+			map.forEach(function(el) {
+				ymaps.ready(function() {
+				  var map = new ymaps.Map(el, {
+					center: [55.76, 37.64], 
+					zoom: 10
+				  });
+				  map.behaviors.disable('scrollZoom');
+				  map.controls.remove('smallMapDefaultSet');
+				  map.controls.remove('trafficControl');
+				  map.controls.remove('rulerControl');
+				  map.container.fitToViewport();
+				});
+      });
+    }
+			}
+        
+    </script> -->
     <!-- END scripts -->
   </body>
 
