@@ -1,4 +1,5 @@
 import './_tabs';
+import './_video';
 // import './_header';
 // import './_slider';
 // import './_fancybox';

@@ -1,0 +1,226 @@
+.header
+	background-color: transparent
+	// position: fixed
+	position: absolute
+	top: 0
+	z-index: 5
+	color: $white
+	width: 100%
+	padding: 30px 0
+	transition: background-color .3s
+	&.is-fixed 
+		background-color: $white
+		color: #363636
+		position: fixed
+		box-shadow: 0 0 15px rgba(#b8b8b8,.48)
+		border: none
+		.nav__link
+			color: #363636
+			&.is-active
+				color: $orange
+			+hover
+				color: $orange
+		a
+			color: #363636
+	&.is-open-menu
+		+md
+			color: #363636
+	a
+		color: $white
+		text-decoration: none
+		+md
+			color: #363636
+	&__logo
+		position: relative
+		z-index: 6
+		float: left
+	&__wrap
+		float: right
+		display: flex
+		align-items: center
+		+md
+			float: none
+			width: 100%
+			height: 100%
+			position: absolute
+			height: 100vh
+			overflow: auto
+			top: 0
+			left: 0
+			display: flex
+			flex-direction: column
+			align-items: center
+			justify-content: flex-start
+			padding: 84px 30px 30px
+			background-color: $white
+			margin-left: -100%
+			margin-top: 0
+			transition: transform .5s
+			z-index: 5
+			color: #363636
+			.is-open-menu &
+				transform: translateX(100%)
+	&__nav
+		margin-right: 80px
+		+lg
+			margin-right: 20px
+		+md
+			margin: 0
+	&__links
+		font-size: 17px
+		display: flex
+		align-items: center
+		+md
+			margin-top: 40px
+		.icon
+			display: block
+			font-size: 20px
+	&__tel
+		display: block
+		line-height: 1
+	&__inst
+		display: block
+		position: relative
+		margin-left: 30px
+		margin-top: -2px
+		line-height: 1
+		+lg
+			margin-left: 15px
+
+.nav
+	&__list
+		display: flex
+		+md
+			flex-direction: column
+			align-items: center
+	&__item
+		&:not(:first-child)
+			margin-left: 20px
+			+md
+				margin: 30px 0 0
+	&__link
+		transition: color .3s
+		position: relative
+		overflow: hidden
+		display: block
+		&.is-active
+			color: $orange
+			&:after
+				transform: translateX(0)
+		+hover
+			color: $orange
+			&:after
+				transform: translateX(0)
+		&:after
+			position: absolute
+			content: ""
+			background-color: $orange
+			top: 100%
+			left: 0
+			height: 2px
+			width: 100%
+			margin-top: -1px
+			transform: translateX(-101%)
+			transition: transform .3s ease-in-out
+
+/*Sandwich*/
+.toggle-menu
+	position: relative
+	float: right
+	width: 32px
+	height: 32px
+	display: none
+	z-index: 100
+	border: none
+	background-color: transparent
+	margin-top: 32px
+	+md
+		display: block
+		margin-top: 8px
+	&:before
+		content: ""
+		position: absolute
+		top: -10px
+		left: -10px
+		right: -10px
+		bottom: -10px
+	&:focus
+		outline: none
+
+$w: 32px
+$h: 3px
+
+.sandwich
+	width: $w
+	position: absolute
+	left: 0
+	right: 0
+	margin: auto
+	z-index: 200
+	top: 50%
+	transform: translateY(-50%)
+.sw-topper
+	display: block
+	position: relative
+	transform-origin: left top
+	width: $w 
+	height: $h
+	background: $white
+	border: none 
+	transition: transform 0.5s, background-color .5s
+	margin-bottom: 5px
+	+xs
+		margin-bottom: 4px
+	.header.is-fixed &,
+	.header.is-open-menu &
+		background-color: #363636
+.sw-bottom
+	overflow: hidden
+	display: block
+	position: relative
+	&__inner
+		display: block
+		position: relative
+		width: $w
+		height: $h
+		transform-origin: center center
+		background: $white
+		border: none
+		transition: transform 0.3s ease-in-out, opacity .5s ease-in-out, background-color .5s
+		margin-bottom: 5px
+		.header.is-fixed &,
+		.header.is-open-menu &
+			background-color: #363636
+		+xs
+			margin-bottom: 4px
+
+.sw-footer
+	display: block
+	position: relative
+	width: $w
+	height: $h
+	transform-origin: left
+	background: $white
+	border: none
+	transition: transform 0.5s, background-color .5s
+	.header.is-fixed &,
+	.header.is-open-menu &
+		background-color: #363636
+
+.sandwich.is-active
+	.sw-topper
+		transform: translate(0, -3px) rotate(45deg)
+	.sw-bottom__inner
+		opacity: 0
+		transform: translateX(-105%)
+	.sw-footer
+		transform: translate(0, 3px) rotate(-45deg)
+		+xs
+			transform: translate(0, 5px) rotate(-45deg)
+
+.logo
+	max-width: 80px
+	display: block
+	img
+		display: block
+		max-width: 100%

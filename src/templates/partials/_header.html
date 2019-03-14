@@ -1,0 +1,62 @@
+<header class="header js-header">
+	<div class="header__inner inner">
+		<div class="header__logo">
+			<a href="#" class="logo">
+				<img src="./img/logo.png" alt="logo">
+			</a>
+		</div>
+		<div class="header__wrap">
+			<nav class="header__nav nav">
+				<ul class="nav__list">
+					{% for item in [
+						{
+							text: 'Чему научитесь?',
+							id: 'what-learn'
+						},
+						{
+							text: 'О курсе',
+							id: 'about'
+						},
+						{
+							text: 'Сертификат',
+							id: 'certificate'
+						},
+						{
+							text: 'Фото с курсов',
+							id: 'photo'
+						},
+						{
+							text: 'Стоимость',
+							id: 'price'
+						},
+						{
+							text: 'Контакты',
+							id: 'contacts'
+						}
+						] %}
+						<li class="nav__item">
+							<a href="#{{ item.id }}" class="nav__link js-menu-link">{{ item.text }}</a>
+						</li>
+						{% endfor %}
+					</ul>
+				</nav>
+				<div class="header__links">
+					<a href="tel:+74952553056" class="header__tel">
+						+7-(495)-255-30-56
+					</a>
+					<span class="header__inst">
+						<a href="http://instagram.com" class="social-item">
+								{{ mixins.icon('insta') }}
+						</a>
+					</span>
+				</div>
+			</div>
+		<button type="button" class="toggle-menu js-toggle-menu">
+			<span class="sandwich js-sandwich">
+				<span class="sw-topper"></span>
+				<span class="sw-bottom"><span class="sw-bottom__inner"></span></span>
+				<span class="sw-footer"></span>
+			</span>
+		</button>
+	</div>
+</header>
