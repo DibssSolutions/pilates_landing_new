@@ -1,4 +1,50 @@
-body
-	background: #FFF
-	line-height: 1.4
+html
+	scroll-behavior: smooth
 
+body
+	background-color: $body
+	line-height: 1.90
+	letter-spacing: 0.063em
+	+verdana
+	font-weight: 400
+	font-size: 15px
+	color: $text
+	min-width: 320px
+	margin: 0
+	padding: 0
+	border: 0
+	+smooth-font
+	+md
+		font-size: 14px
+		line-height: 2
+	&.is-overflow-hidden
+		overflow: hidden
+a
+	text-decoration: none
+	color: currentColor
+	&:hover
+		text-decoration: none
+
+.sm-hide
+	+sm
+		display: none
+// .sm-block
+// 	text-align: center
+// 	margin-top: 30px
+// 	display: none
+// 	+sm
+// 		display: block
+// 	.btn
+// 		min-width: 288px
+
+// %cardShadow
+// 	box-shadow: $shadow
+// 	border-radius: 10px
+// 	background-color: #ffffff
+
+// .slick-track
+// 	display: flex
+// .slick-slide
+// 	height: auto
+// 	& > div
+// 		height: 100%
