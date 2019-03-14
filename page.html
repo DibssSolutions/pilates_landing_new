@@ -14,6 +14,95 @@
   <body>
     <!-- BEGIN content -->
     <div class="out">
+      <header class="header js-header">
+        <div class="header__inner inner">
+          <div class="header__logo">
+            <a href="#" class="logo">
+              <img src="./img/logo.png" alt="logo">
+            </a>
+          </div>
+          <div class="header__wrap">
+            <nav class="header__nav nav">
+              <ul class="nav__list">
+                <li class="nav__item">
+                  <a href="#what-learn" class="nav__link js-menu-link">Чему научитесь?</a>
+                </li>
+                <li class="nav__item">
+                  <a href="#about" class="nav__link js-menu-link">О курсе</a>
+                </li>
+                <li class="nav__item">
+                  <a href="#certificate" class="nav__link js-menu-link">Сертификат</a>
+                </li>
+                <li class="nav__item">
+                  <a href="#photo" class="nav__link js-menu-link">Фото с курсов</a>
+                </li>
+                <li class="nav__item">
+                  <a href="#price" class="nav__link js-menu-link">Стоимость</a>
+                </li>
+                <li class="nav__item">
+                  <a href="#contacts" class="nav__link js-menu-link">Контакты</a>
+                </li>
+              </ul>
+            </nav>
+            <div class="header__links">
+              <a href="tel:+74952553056" class="header__tel"> +7-(495)-255-30-56 </a>
+              <span class="header__inst">
+                <a href="http://instagram.com" class="social-item">
+                  <svg class="icon icon-insta">
+                    <use xlink:href="img/sprite.svg#icon-insta"></use>
+                  </svg>
+                </a>
+              </span>
+            </div>
+          </div>
+          <button type="button" class="toggle-menu js-toggle-menu">
+            <span class="sandwich js-sandwich">
+              <span class="sw-topper"></span>
+              <span class="sw-bottom"><span class="sw-bottom__inner"></span></span>
+              <span class="sw-footer"></span>
+            </span>
+          </button>
+        </div>
+      </header>
+      <div class="main js-navigation-section">
+        <div class="main__video js-video" data-vide-bg="mp4: video/pilates" data-vide-options="posterType: jpg, loop: true, playsinline: true"></div>
+        <div class="main__container">
+          <div class="main__content">
+            <div class="main__inner inner">
+              <h3 class="main__descr title-sm"> 3 дневный курс — 8/9/10 февраля 2019 г. Москва (+1 день интенсив) </h3>
+              <h1 class="main__title"> Курсы для тех, кто хочет стать инстурктором (тренером) по пилатесу (Matwork1) </h1>
+              <div class="main__form">
+                <form action="" class="form js-form">
+                  <div class="row">
+                    <div class="col col-25 col-md-33 col-sm-100">
+                      <div class="form__input-group">
+                        <input type="text" class="form__input" name="name" placeholder="Имя" />
+                      </div>
+                    </div>
+                    <div class="col col-25 col-md-33 col-sm-100">
+                      <div class="form__input-group">
+                        <input type="text" class="form__input" name="email" placeholder="Email" />
+                      </div>
+                    </div>
+                    <div class="col col-25 col-md-33 col-sm-100">
+                      <div class="form__input-group">
+                        <input type="text" class="form__input js-phone-mask" name="phone" placeholder="Телефон" minlength="16" />
+                      </div>
+                    </div>
+                    <div class="col col-25 col-md-100">
+                      <button class="btn btn_wide js-btn-submit" type="submit">
+                        <span class="btn__text">записаться на курс</span>
+                      </button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+              <h2 class="main__price"> Базовая стоимость курса 19 900 ₽ (за 3 дня) + 4000 ₽ за 4день — по желанию (интенсив) </h2>
+              <div class="main__address text-center"> Адрес: г. Москва - Уточняется </div>
+            </div>
+          </div>
+        </div>
+      </div>
       <div class="course-section section-md bg-white">
         <div class="course-section__inner inner">
           <div class="course-section__content">
