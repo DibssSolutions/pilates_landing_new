@@ -234,10 +234,12 @@
 				border: 1px solid $errorRed !important
 		&.form-group__rect-input
 			border-radius: 0
+			+md
+				border-radius: 10px
 		&.form-group__left-radius-input
 			border-radius: 10px 0 0 10px
-			+md 
-				border-radius: 0
+			+md
+				border-radius: 10px
 		&.error
 			border: 1px solid $orange !important
 		&:focus
@@ -337,7 +339,7 @@
 // 										MAP
 .map
 	width: 100%
-	height: 533px
+	height: 500px
 	+xs
 		height: 300px
 // 										CONTACTS
@@ -345,24 +347,22 @@
 	color: $black
 	position: relative
 	transition: transform .15s
-	padding-bottom: 127px
+	padding-bottom: 120px
 	+hover
 		transform: translateY(-8px)
 	+md
-		padding-bottom: 0
+		padding-bottom: 60px
 		margin: 0 -16px
 	&__info
-		position: absolute
-		bottom: 0
-		left: 50%
-		transform: translateX(-50%)
+		// position: absolute
+		// bottom: 0
+		// left: 50%
+		// transform: translateX(-50%)
+		margin: -160px auto 0
 		z-index: 1
 		background-color: $white
 		+md
-			position: static
-			transform: translateX(0)
-			margin: 0 auto
-
+			margin-top: 0
 .contacts-info
 	max-width: 440px
 	width: 100%
