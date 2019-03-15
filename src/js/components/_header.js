@@ -4,7 +4,6 @@ const header = $('.js-header');
 
 WIN.on('scroll', function() { 
   let top = DOC.scrollTop();
-  let winHeught = WIN.height();
 
   (top >= 1) 
     ? header.addClass('is-fixed')

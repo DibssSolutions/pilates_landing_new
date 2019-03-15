@@ -36,9 +36,12 @@
 		position: relative
 		z-index: 6
 		padding-right: 47px
+		+xl 
+			padding-left: 20px
 	&__inner
 		display: flex
 		align-items: center
+		
 	&__wrap
 		display: flex
 		align-items: center
@@ -67,9 +70,9 @@
 			.is-open-menu &
 				transform: translateX(100%)
 	&__nav
-		margin-right: 80px
+		margin-right: 10px
 		+lg
-			margin-right: 20px
+			// margin-right: 20px
 		+md
 			margin: 0
 	&__links
@@ -89,27 +92,31 @@
 		font-family: Verdana
 		font-size: 15px
 		letter-spacing: 0.94px
+		white-space: nowrap
+		+xl 
+			font-size: 14px
 	&__inst
 		display: block
 		position: relative
 		margin-left: 40px
 		line-height: 1
-		+lg
-			margin-left: 15px
+		+xl
+			margin-left: 20px
 
 .nav
 	&__list
 		display: flex
+		flex-wrap: wrap
 		+md
 			flex-direction: column
 			align-items: center
 	&__item
-		&:not(:first-child)
-			margin-left: 42px
-			+lg
-				margin-left: 30px
+		&:not(:last-child)
+			margin-right: 42px
+			+xl
+				margin-right: 20px
 			+md
-				margin-left: 0
+				margin-right: 0
 				margin-top: 30px
 	&__link
 		transition: color .3s
@@ -117,6 +124,8 @@
 		overflow: hidden
 		display: block
 		letter-spacing: 0.05em
+		+xl 
+			font-size: 14px
 		&.is-active
 			color: $orange
 			&:after
