@@ -36,6 +36,8 @@
 		+sm
 			margin: 30px 0 0
 			padding: 40px
+		+xs 
+			padding: 40px 20px
 	&__description
 		margin-bottom: 80px
 		font-weight: 700 
@@ -79,9 +81,11 @@
 			margin-top: 30px
 		span
 			color: #FF833E 
+
 .sm-form
 	color: $white 
 	.form-group
+		line-height: 1
 		&:not(:first-child)
 			margin-top: 15px
 	.btn
@@ -92,3 +96,5 @@
 		margin-bottom: 38px 
 		line-height: 1.3
 		color: $white 
+	.help-block.form-error
+		display: inline-block
