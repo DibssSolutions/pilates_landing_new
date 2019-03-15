@@ -1,0 +1,48 @@
+.footer
+	// padding: 0 38px
+	background-color: #2c2e38
+	+md
+		padding: 0 0 15px
+	&__content
+		display: flex
+		justify-content: space-between
+		align-items: center
+		+md
+			flex-direction: column
+	&__logo
+		max-width: 200px
+		margin-right: 30px
+		+md
+			margin-right: 0
+			max-width: 100px
+		img
+			display: block
+			max-width: 100%
+	&__text
+		font-size: 18px
+		font-weight: 400
+		line-height: 1.2
+		color: $white
+		margin-right: auto
+		+md
+			margin-top: 15px
+			text-align: center
+		+sm
+			font-size: 16px
+	&__links
+		display: flex
+		align-items: center
+		font-size: 19px
+		font-weight: 300
+		margin-left: 15px
+		color: $white
+		+md
+			margin: 15px 0 0
+	&__tel
+		text-decoration: none
+		color: $white
+	&__inst
+		margin-left: 28px
+		
+		.icon
+			display: block

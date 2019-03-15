@@ -8,3 +8,4 @@ import './_fancybox';
 // import './_dropdown';
 import './_validation';
 import './_header';
+import './_header-toggler';

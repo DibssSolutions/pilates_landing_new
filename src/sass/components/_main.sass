@@ -32,11 +32,10 @@
 		height: 100%
 		width: 100%
 		z-index: 4
-		color: #fff
 		padding: 100px 0 85px
 		+vertical
 		+md
-			padding: 49px 0 0
+			padding: 100px 0 30px
 		+sm
 			position: relative
 		&:before
@@ -50,38 +49,50 @@
 		width: 100%
 		padding: 0 15px
 		text-align: left
-		// max-width: 1105px
-		// width: 99.8%
-		// width: 99.8%
+		color: $white
 		width: 100%
+		+md 
+			text-align: center
 		+sm
 			display: block
 			padding-top: 30px
+			text-align: center
 	&__title
 		+verdana
 		+f(40px, 700, 1.35)
 		margin-top: 10px
 		margin-bottom: 60px
-		letter-spacing: 0.012em	
+		letter-spacing: 0.012em
 		+md
 			font-size: 32px
 		+sm
-			font-size: 24px
+			font-size: 22px
+			margin-bottom: 30px
 	&__subtitle
 		margin-top: 30px
 		text-transform: uppercase
-		
 		+sm
 			font-size: 20px
 	&__descr
-		&.title-sm
-			color: $white
-			letter-spacing: 0.011em
+		+verdana
+		+f(21px, 700, 1.48)
+		letter-spacing: 0.011em
+		+md 
+			font-size: 18px
+		+sm 
+			font-size: 16px
 	&__price
 		color: $white
 		+verdana
 		font-weight: 300
 		+f(18px, 400, 1.667)
+		+md 
+			font-size: 16px
+		+sm 
+			span 
+					display: block
+		+xs 
+			font-size: 14px
 	&__form
 		margin-bottom: 30px
 		width: 100%
@@ -98,17 +109,25 @@
 .form
 	margin: 0 -1px
 	display: flex
-	border-radius: 10px
-	overflow: hidden
 	+md 
 		flex-direction: column
-		max-width: 640px
+		max-width: 500px
 		margin: 0 auto
-		border-radius: 0
+	+sm 
+		max-width: 360px
 	&__item
 		+flex-size(25%)
 		padding: 0 1px
 		+md 
 			flex: 0 0 auto
 			max-width: 100%
-			margin: 2px 0
+			padding: 10px 0
+		&:last-child
+			border-radius: 0 10px 10px 0
+			overflow: hidden
+			+md 
+				border-radius: 0
+	.help-block.form-error
+		position: absolute
+		top: 100%
+		left: 0
