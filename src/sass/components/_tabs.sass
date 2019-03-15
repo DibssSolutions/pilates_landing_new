@@ -3,11 +3,21 @@
 		display: flex
 		align-items: center
 		justify-content: center
+		+sm
+			flex-wrap: wrap
 		&-item
 			&:not(:last-child)
 				margin-right: 30px
+				+xs
+					margin-right: 0
+					margin-bottom: 30px
+			+xs
+				width: 100%
+				text-align: center
 	&__wrapper
 		margin-top: 40px
+		+xs
+			margin-top: 28px
 	&__content
 		line-height: 2
 	&__list

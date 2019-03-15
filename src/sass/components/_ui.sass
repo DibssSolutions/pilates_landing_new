@@ -7,6 +7,9 @@
 	box-shadow: 0 20px 56px -33px rgba(0, 0, 0, 0.2)
 	border-radius: 10px
 	overflow: hidden
+	display: flex
+	flex-direction: column
+	justify-content: space-between
 	transition: transform .15s
 	+sm 
 		border-radius: 7px
@@ -31,11 +34,11 @@
 				top: 13px
 				left: 20px
 				right: 20px
-		+ms
+		+xs
 			height: 98px
 	&__bottom
 		text-align: center
-		padding: 0 2em 2.66em
+		padding: 0 30px 40px
 		p
 			text-align: left
 			line-height: 1.9
@@ -52,7 +55,7 @@
 		overflow: hidden
 		z-index: 1
 		position: relative
-		+ms
+		+xs
 			+circle(81)
 			margin-top: -58px
 	&__title
@@ -60,7 +63,7 @@
 		+md
 			&.title_md
 				font-size: 18px
-		+ms
+		+xs
 			margin-top: 6px
 	&__aside
 		letter-spacing: 0.063em
@@ -69,7 +72,12 @@
 		+md
 			margin-bottom: 10px
 	&__btn
-		margin-top: 36px
+		padding: 0 30px 40px
+		+md
+			padding: 0 20px 31px
+		+sm
+			margin: 0 auto
+			max-width: 375px
 
 // TESTIMONIAL
 .testimonial
@@ -143,6 +151,8 @@
 	&__inner
 		border: 2px solid $white
 		padding: 40px
+		+sm
+			padding: 20px 10px
 		// +lg
 		// 	padding: 30px
 		// +md
@@ -335,11 +345,15 @@
 	color: $black
 	position: relative
 	transition: transform .15s
+	padding-bottom: 127px
 	+hover
 		transform: translateY(-8px)
+	+md
+		padding-bottom: 0
+		margin: 0 -16px
 	&__info
 		position: absolute
-		bottom: -127px
+		bottom: 0
 		left: 50%
 		transform: translateX(-50%)
 		z-index: 1
@@ -438,6 +452,9 @@
 		border: 1px solid $grayLight
 		margin-right: 20px
 		position: relative
+		+sm
+			+circle(35)
+			margin-right: 10px
 		&:before
 			counter-increment: section
 			content: '0'counter(section)
@@ -456,6 +473,7 @@
 	min-height: 182px
 	+sm
 		padding: 20px 15px
+		min-height: initial
 	+hover
 		transform: translateY(-8px)
 	&__title
