@@ -3,15 +3,17 @@
 {# 									INSTRUCTOR #}
 {% macro instructor(props) %}
 <div class="instructor {% if props.class %}{{props.class}}{% endif %}">
-	<div class="instructor__top"></div>
-	<div class="instructor__bottom">
-		<div class="instructor__img" style="background-image: url(./img/{{props.img}})"></div>
-		<h4 class="instructor__title title-sm">{{props.name}}</h4>
-		<div class="instructor__aside">{{props.aside}}</div>
-		<p>{{props.text}}</p>
-		<div class="instructor__btn">
-			<a href="#" class="btn btn_wide">Записаться на курс</a>
+	<div class="instructor__wrap">
+		<div class="instructor__top"></div>
+		<div class="instructor__bottom">
+			<div class="instructor__img" style="background-image: url(./img/{{props.img}})"></div>
+			<h4 class="instructor__title title-sm">{{props.name}}</h4>
+			<div class="instructor__aside">{{props.aside}}</div>
+			<p>{{props.text}}</p>
 		</div>
+	</div>
+	<div class="instructor__btn">
+		<a href="#" class="btn btn_wide">Записаться на курс</a>
 	</div>
 </div>
 {% endmacro %}

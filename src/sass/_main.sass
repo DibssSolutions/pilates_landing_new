@@ -43,35 +43,55 @@
 		padding: 30px 80px 70px
 		box-shadow: 0 20px 56px -33px rgba(0, 0, 0, 0.2)
 		position: relative
+		+sm
+			padding: 21px 21px 70px
 	&__btn
 		position: absolute
 		left: 50%
 		bottom: -30px
 		transform: translateX(-50%)
+		+ms
+			width: 100%
 // about-section
 
 // instructors
 .instructors
+	&__col
+		// height: 100%
+		&:not(:last-child)
+			+sm
+				margin-bottom: 16px
 // instructors
 
 // certificate
 .certificate
 	&__title
 		padding: 0 20px
+		+md
+			padding: 0
 	&__img
-		max-width: 420px
-		margin: -140px auto 0
-		box-shadow: 0 50px 40px rgba(0, 0, 0, 0.2)
+		margin-top: -140px
+		+md
+			margin-top: -80px
 		img
+			margin: 0 auto
+			box-shadow: 0 50px 40px rgba(0, 0, 0, 0.2)
 			display: block
 			max-width: 100%
 	&__content
 		padding: 50px
 		box-shadow: 0 20px 56px -33px rgba(0, 0, 0, 0.2)
+		+md
+			padding: 30px
+		+sm
+			padding: 16px
+			margin: 0 -16px
 	&__bullets
 		margin-top: 75px
 		counter-reset: section
 		list-style-type: none
+		+md
+			margin-top: 40px
 		&-item
 			+montserrat
 			letter-spacing: 0.033em
@@ -79,6 +99,8 @@
 				margin-top: 35px
 	&__feedback
 		margin-top: 50px
+		+sm
+			margin: 40px -16px 0 
 // certificate
 
 

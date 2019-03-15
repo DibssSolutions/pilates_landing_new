@@ -21,6 +21,8 @@
 	+hover
 		background-color: $orangeHover
 		box-shadow: none
+	+ms
+		width: 100%
 	&_blue
 		letter-spacing: 0.033em
 		font-weight: 700
@@ -37,8 +39,14 @@
 			color: $white
 			background-color: $blueCityHover
 			box-shadow: 0 19px 45px -12px $blue
+		+sm
+			padding: 15px 21px
+
 	&_lg
 		min-width: 433px
+		+xs
+			min-width: initial
+			width: 100%
 	&_wide
 		width: 100%
 	&_shadow
