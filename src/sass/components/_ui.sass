@@ -218,7 +218,7 @@
 .form-group
 	position: relative
 	input, textarea
-		color: $grayLight
+		color: $black
 		+verdana
 		+f(15px, 400)
 		letter-spacing: 0.066em
@@ -349,7 +349,8 @@
 	transition: transform .15s
 	padding-bottom: 120px
 	+hover
-		transform: translateY(-8px)
+		.contacts-info
+			transform: translateY(-8px)
 	+md
 		padding-bottom: 60px
 		margin: 0 -16px
@@ -369,6 +370,7 @@
 	padding: 2em
 	border-radius: 10px
 	box-shadow: 0 20px 56px -33px rgba(0, 0, 0, 0.2)
+	transition: transform .15s
 	+xs
 		padding: 30px 15px
 	.footer &
