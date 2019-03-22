@@ -27,27 +27,25 @@ import {
       } else {
         modal.removeClass(OPEN);
         control.removeClass(ACTIVE);
-        BODY.removeClass(OVERFLOW_HIDDEN);
       }
     });
   });
 
   modals.each((i, modal) => {
     modal = $(modal);
-    const inner = modal.find('[data-modal-container]');
     const close = modal.find('[data-modal-close]');
 
     const hide = () => {
       modal.removeClass(OPEN);
-      controls.removeClass(ACTIVE);
+	  controls.removeClass(ACTIVE);
       BODY.removeClass(OVERFLOW_HIDDEN);
     };
 
     BODY.on('click', e => {
       if (
-        $(e.target).closest(inner).length ||
-        $(e.target).closest(close).length ||
-        $(e.target).closest(controls).length
+        $(e.target).closest('[data-modal-container]').length ||
+        $(e.target).closest('[data-modal-close]').length ||
+        $(e.target).closest('[data-modal-control]').length
       )
         return;
       hide();

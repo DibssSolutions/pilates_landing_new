@@ -2,4 +2,6 @@ ProjectTitle: template
 
 PageList:
 - file: page.html
+  ready: 100
+- file: page-success.html
   ready: 50

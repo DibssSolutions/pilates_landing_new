@@ -1,0 +1,105 @@
+---
+title: Success
+classBody: is-overflow-hidden
+---
+{% extends "layouts/_layout.html" %}
+
+{% block content %}
+	{% include "partials/_header.html" %}
+	{% include "partials/_main.html" %}
+	{% include "partials/_course.html" %}
+	{% include "partials/_quotes.html" %}
+	{% include "partials/_about.html" %}
+	{% include "partials/_instructors.html" %}
+	{% include "partials/_certificate.html" %}
+	{% include "partials/_gallery.html" %}
+	{% include "partials/_graduate.html" %}
+	{% include "partials/_cost.html" %}
+	<div class="section-md js-navigation-section" id="contacts">
+		<div class="inner-md">
+			{% for item in [{
+				title: 'Москва',
+				adress: 'Метро Китай-Город, ул. Солянка, 1/2, 2 подъезд, 2 этаж',
+				phoneHref: '+74952553056',
+				phone: '+7(495)255-30-56',
+				mailHref: 'contact@pilates-institute.ru',
+				mail: 'Сontact@pilates-institute.ru'
+			}] %}
+			 {{ui.map(item)}}
+			{% endfor %}
+		</div>
+	</div>
+	{% include "partials/_footer.html" %}
+	<div class="success">
+		<div class="modal is-open" data-modal="registration">
+			<div class="modal__container" data-modal-container>
+			  <button class="modal__close" data-modal-close>
+				{{ mixins.icon("close") }}
+			  </button>
+			  <div class="modal__content">
+				<h2 class="modal__title">
+				  Регистрация на семинар
+				</h2>
+				<div class="modal__form-wrapper">
+				  <h4 class="modal__subtitle">
+					Microwave Cooking Is The Wave Of The Future
+				  </h4>
+				  <h4 class="modal__date title title_sm">01.12.2018 — 03.12.2018</h4>
+				  <form action="/" class="registration-form is-success js-validation">
+					<div class="form-group">
+					  <input
+						class="form-group__border-input"
+						type="text"
+						placeholder="Имя"
+						data-validation="length"
+						data-validation-length="min2"
+						data-validation-error-msg="Имя должно быть не менее двух символов"
+					  />
+					</div>
+					<div class="form-group">
+					  <input
+						type="text"
+						class="form-group__border-input"
+						placeholder="Телефон"
+						data-validation="custom"
+						data-validation-regexp="^(\+7|7|8)?[\s\-]?\(?[489][0-9]{2}\)?[\s\-]?[0-9]{3}[\s\-]?[0-9]{2}[\s\-]?[0-9]{2}$"
+						data-validation-error-msg="Пожалуйста, введите правильный номер телефона"
+					  />
+					</div>
+					<div class="form-group">
+					  <input
+						class="form-group__border-input"
+						type="text"
+						placeholder="Email"
+						data-validation="email"
+						data-validation-error-msg="Пожалуйста, введите правильный адрес"
+					  />
+					</div>
+					<div class="registration-form__submit">
+					  <button type="submit" class="btn">Записаться на курс</button>
+					</div>
+					<div class="registration-form__agreement user-agreement">
+					  Я согласен с условиями обработки персональных данных
+					</div>
+					<div class="success-block">
+						<div class="success-block__inner">
+							<div class="success-block__icon">
+							<div class="success-mark">
+							  {{ mixins.icon("check") }}
+							</div>
+						  </div>
+						  <h2 class="success-block__title">
+							Регистрация на семинар
+						  </h2>
+						  <div class="success-block__text">
+							Мы свяжемся с Вами в течении N часов для подтвреждения регистрации
+						  </div>
+						</div>
+					</div>
+				  </form>
+				</div>
+			  </div>
+			</div>
+		  </div>
+	</div>
+{% endblock %}
